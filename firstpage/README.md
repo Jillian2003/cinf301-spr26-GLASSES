@@ -50,6 +50,17 @@ npx http-server -c-1 -p 5500
 ```
 Open: http://localhost:5500/html/index.html
 
+## Second Page (div-only)
+- The div-only replica now lives at the Web Application root: `../second-page/html/index.html`.
+- To view it, start a local server from the Web Application folder (the parent of `firstpage`) and open:
+
+  - `http://localhost:5500/second-page/html/index.html`
+  - With VS Code Live Server, open the `second-page/html/index.html` file from the `second-page` folder and run Live Server there.
+
+Notes for second page:
+- Structural tags (`header`, `nav`, `section`, `table`, `footer`, etc.) are replaced with `<div>` elements styled via `second-page/css/second-page.css`.
+- It reuses base assets from `firstpage`: `firstpage/css/style.css`, `firstpage/images/`, and `firstpage/javascript/script.js`.
+
 ## 1) Open Directly (quickest)
 - Open the workspace in VS Code or File Explorer.
 - Open `html/index.html` in your browser.
