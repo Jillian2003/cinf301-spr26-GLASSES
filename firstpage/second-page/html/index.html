@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Glasses & Style — Shop</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bitcount+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome (Free) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" />
+    <!-- Base styles from first page for consistent look/feel -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Shop-specific styles (div-only mapping) -->
+    <link rel="stylesheet" href="../css/second-page.css" />
+  </head>
+  <body>
+    <!-- Header (div-only) -->
+    <div class="header">
+      <h1 class="brand"><i class="fa-solid fa-glasses" aria-hidden="true"></i> Glasses & Style <i class="fa-solid fa-spaghetti-monster-flying" aria-hidden="true"></i></h1>
+      <i class="fa-solid fa-glasses"></i>
+      <i class="fa-solid fa-spaghetti-monster-flying"></i>
+      <p class="tagline">Find frames that fit your face and life.</p>
+      <form id="search-form" role="search" aria-label="Search glasses">
+        <label for="q">Search frames</label>
+        <input id="q" name="q" type="search" placeholder="Search by style, color, brand" />
+        <button class="button" type="submit" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <span>Search</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Nav (div-only, links back to first page sections) -->
+    <div class="nav" aria-label="Primary">
+      <div class="links">
+        <a class="nav-link" href="../../html/index.html">Home</a>
+        <a class="nav-link" href="#catalog">Shop</a>
+        <a class="nav-link" href="../../html/index.html#info">About</a>
+        <a class="nav-link" href="../../html/index.html#specs">Specs</a>
+        <a class="nav-link" href="../../html/index.html#site-footer">Contact</a>
+      </div>
+    </div>
+
+    <!-- Main (div-only) -->
+    <div class="main">
+      <div id="catalog" aria-labelledby="catalog-title">
+        <h2 id="catalog-title">Shop Frames</h2>
+        <div class="catalog">
+          <!-- Product 1 -->
+          <div class="product-card" data-product-id="classic-round">
+            <div class="product-image">
+              <img src="../images/glasses1.svg" alt="Classic Round — Charcoal" />
+            </div>
+            <div class="product-title">Classic Round — Charcoal</div>
+            <div class="product-desc">Timeless round silhouette with featherweight comfort for all-day wear.</div>
+            <div class="product-meta">
+              <div class="price" aria-label="Price">$79</div>
+              <button class="button add-to-cart" type="button" aria-label="Add Classic Round to cart" data-name="Classic Round" data-price="79">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card" data-product-id="bold-square-teal">
+            <div class="product-image">
+              <img src="../images/glasses2.svg" alt="Bold Square — Teal" />
+            </div>
+            <div class="product-title">Bold Square — Teal</div>
+            <div class="product-desc">Statement-making square frames with a modern teal finish.</div>
+            <div class="product-meta">
+              <div class="price" aria-label="Price">$99</div>
+              <button class="button add-to-cart" type="button" aria-label="Add Bold Square to cart" data-name="Bold Square" data-price="99">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card" data-product-id="lifestyle-smile">
+            <div class="product-image">
+              <img src="../images/glasses3.svg" alt="Lifestyle — Warm" />
+            </div>
+            <div class="product-title">Lifestyle — Warm</div>
+            <div class="product-desc">Soft tones and everyday versatility with durable, comfy materials.</div>
+            <div class="product-meta">
+              <div class="price" aria-label="Price">$89</div>
+              <button class="button add-to-cart" type="button" aria-label="Add Lifestyle to cart" data-name="Lifestyle" data-price="89">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card" data-product-id="bold-square-green">
+            <div class="product-image">
+              <img src="../images/glasses4.svg" alt="Bold Square — Green" />
+            </div>
+            <div class="product-title">Bold Square — Green</div>
+            <div class="product-desc">Sharp edges with a confident profile, finished in deep green.</div>
+            <div class="product-meta">
+              <div class="price" aria-label="Price">$99</div>
+              <button class="button add-to-cart" type="button" aria-label="Add Bold Square Green to cart" data-name="Bold Square Green" data-price="99">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer (div-only) -->
+    <div class="footer" id="site-footer">
+      <small>&copy; 2026 Glasses & Style — All rights reserved.</small>
+      <div>
+        Contact: <a href="mailto:hello@glassesandstyle.example">hello@glassesandstyle.example</a>
+      </div>
+      <p class="footer-note">A dash of whimsy <i class="fa-solid fa-pastafarianism" aria-hidden="true"></i> <i class="fa-solid fa-spaghetti-monster-flying" aria-hidden="true"></i></p>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

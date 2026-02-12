@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="100%" stop-color="#fca5a5" />
+    </linearGradient>
+  </defs>
+  <rect fill="url(#grad)" width="600" height="300"/>
+  <circle cx="200" cy="150" r="65" stroke="#7c3aed" stroke-width="8" fill="none"/>
+  <circle cx="400" cy="150" r="65" stroke="#7c3aed" stroke-width="8" fill="none"/>
+  <path d="M265 150 Q300 130 335 150" stroke="#7c3aed" stroke-width="8" fill="none" />
+  <text x="300" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#1f2937">Lifestyle — Gradient</text>
+</svg>
