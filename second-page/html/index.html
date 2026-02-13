@@ -30,27 +30,27 @@
 
 		<!-- navigation bar -->
 		<div id = "nav">
-			<ul>
-				<li class="nav-link"><a href="#shop">Shop</a></li>
-				<li class="nav-link"><a href="#about">About</a></li>
-				<li class="nav-link"><a href="#options">Options</a></li>
-				<li class="nav-link"><a href="#contact">Contact</a></li>
-			</ul>
+			<div class="nav-list">
+				<div class="nav-link"><a href="#shop">Shop</a></div>
+				<div class="nav-link"><a href="#about">About</a></div>
+				<div class="nav-link"><a href="#options">Options</a></div>
+				<div class="nav-link"><a href="#contact">Contact</a></div>
+			</div>
 		</div>
 
 		<div id = "main">
 			<!-- shop -->
 			<div id="shop">
 				<h2>Featured Frames</h2>
-				<figure class="frame active">
+				<div class="frame active">
 					<img src="../images/glasses-frame-1.svg" alt="classic round glasses"/>
-					<figcaption>Classic Round In Black</figcaption>
-				</figure>
-				<figure class="frame">
+					<div class="figcaption">Classic Round In Black</div>
+				</div>
+				<div class="frame">
 					<img src="../images/glasses-frame-2.svg" alt="bold square glasses"/>
-					<figcaption>Bold Square In Teal</figcaption>
-				</figure>				
-				<aside>
+					<div class="figcaption">Bold Square In Teal</div>
+				</div>
+				<div class="aside">
 					<button class="button prev">
 						<i class="fa-solid fa-circle-chevron-left"></i>
 						<span>Prev</span>
@@ -59,7 +59,7 @@
 						<span>Next</span>
 						<i class="fa-solid fa-circle-chevron-right"></i>
 					</button>
-				</aside>
+				</div>
 			</div>
 
 			<!-- about -->
@@ -79,7 +79,7 @@
 						complement different face shapes and personal aesthetics
 					</p>
 				</div>
-				<aside>
+				<div class="aside">
 					<h3>
 						<i class="fa-solid fa-snowflake"></i>
 						Limited Winter Collection	
@@ -88,7 +88,7 @@
 					<p>
 						Warm hues, matte finishes, and cozy vibes — available while supplies last
 					</p>
-				</aside>
+				</div>
 			</div>
 
 			<img class="model-img" src="../images/glasses-model.png" alt="glasses model"/>
@@ -96,7 +96,7 @@
 			<!-- options -->
 			<div id="options">
 				<h2>Lens & Frame Options</h2>
-				<div id = "frameOptions">
+				<div id="frameOptions">
 					<div class="div-table">
 						<div class="div-table-row">
 							<div class="table-cell">Option</div>
@@ -130,11 +130,10 @@
 						</div>
 					</div>
 				</div>
-			</section>
-		</div>
+			</div>
 
-		<!-- options -->
-			<section id="doctors">
+			<!-- doctors -->
+			<div id="doctors">
 				<h2>Optometrist Options</h2>
 				<div id = "doctorOptions">
 					<div class="div-table">
@@ -155,32 +154,33 @@
 						</div>
 						<div class="div-table-row">
 							<div class="table-cell"><img src="../images/doctor3.jpeg" alt="Dr. Sam Andersen"></div>
-							<div class="table-cell">Dr. Sam Andersen</div>			
+							<div class="table-cell">Dr. Sam Andersen</div>
 							<div class="table-cell">Neuro-Optometrist</div>
 						</div>
 						<div class="div-table-row">
 							<div class="table-cell"><img src="../images/doctor4.webp" alt="Dr. Mary Lindon"></div>
-							<div class="table-cell">Dr. Mary Lindon</div>	
+							<div class="table-cell">Dr. Mary Lindon</div>
 							<div class="table-cell">Contact Lens Specialist</div>
+						</div>
+					</div>
 				</div>
-			</section>
+			</div>
 		</div>
 
-			<!-- contact -->
-			<footer id="contact">
-			<address>
+		<!-- contact -->
+		<div id="contact" class="site-footer">
+			<div class="address">
 				<small>Contact: <a href="mailto:hello@glassesandstyle.example">hello@glassesandstyle.example</a></small>
-			</address>
+			</div>
 			<small>&copy; 2026 Glasses & Style — All rights reserved</small>
-			<aside>
+			<div class="aside">
 				<small>
-					<!-- FONTAWESOME2 -->
-					<i class="fa-solid fa-spaghetti-monster-flying"></i> 
+					<i class="fa-solid fa-spaghetti-monster-flying"></i>
 					A dash of whimsy
 					<i class="fa-solid fa-spaghetti-monster-flying"></i>
-				</small>			
-			</aside>
-		</footer>
+				</small>
+			</div>
+		</div>
 
 		<script src="../js/script.js"></script>
 	</body>

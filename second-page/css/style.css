@@ -54,12 +54,11 @@ h6 {
     filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
 }
 
-#nav ul {
+#nav .nav-list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    list-style: none;
     margin: 0;
     padding: 0.5rem 1rem;
 }
@@ -101,7 +100,7 @@ h6 {
     display: none;
 }
 
-#shop aside {
+#shop .aside {
     display: flex;
     justify-content: center;
 }
@@ -141,18 +140,18 @@ h6 {
 }
 
 #about .article, 
-#about aside {
+#about .aside {
     border-radius: 1rem;
     background-color: var(--white-light);
     padding: 1rem;
     filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
 }
 
-#about aside {
+#about .aside {
     filter: drop-shadow(0 0.5rem 0 var(--green-accent));
 }
 
-#about aside h3 {
+#about .aside h3 {
     color: var(--green-accent);
 }
 
