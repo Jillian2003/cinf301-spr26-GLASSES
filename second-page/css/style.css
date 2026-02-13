@@ -1,0 +1,164 @@
+/*
+GOOGLEFONT1 : BBH Bogle for headings
+GOOGLEFONT2 : Bitcount Single for text
+Fonts are loaded via Google Fonts links in index.html
+*/
+
+:root {
+    --white-light: #ffffff;
+    --white-medium: #f8fafc;
+    --white-dark: #f1f5f9;
+    --blue-light: #0ea5e9;
+    --blue-dark: #0369a1;
+    --green-accent: #10b981;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Bitcount Single";
+    font-size: medium;
+    background-color: var(--white-dark);
+    overscroll-behavior: none;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: "BBH Bogle";
+    font-size: 2rem;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin: 5rem;
+}
+
+#shop {
+    border-radius: 1rem;
+    background-color: var(--white-light);
+    margin: 5rem;
+    padding: 2.5rem;
+    filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
+}
+
+#shop img {
+    height: 20rem;
+}
+
+.frame.active {
+    display: flex;
+    background-color: var(--white-dark);
+    border-radius: 1rem;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+.frame {
+    display: none;
+}
+
+#shop aside {
+    display: flex;
+    justify-content: center;
+}
+
+#shop button {
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--blue-dark);
+    color: var(--white-light);
+    margin: 1rem;
+    padding: 1rem;
+    filter: drop-shadow(0 0.25rem 0 var(--blue-light));
+}
+
+#shop button:hover {
+	transform: translateY(-0.1rem);
+    background-color: var(--blue-light);
+    filter: drop-shadow(0 0.25rem 0 var(--blue-dark));
+}
+
+#shop button:active {
+	transform: translateY(0);
+    background-color: var(--blue-dark);
+    filter: drop-shadow(0 0.25rem 0 var(--blue-light));
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1rem;
+    gap: 1rem;
+    margin: 5rem;
+}
+
+#about h3 {
+    color: var(--blue-dark);
+}
+
+#about article, 
+#about aside {
+    border-radius: 1rem;
+    background-color: var(--white-light);
+    padding: 1rem;
+    filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
+}
+
+#about aside {
+    filter: drop-shadow(0 0.5rem 0 var(--green-accent));
+}
+
+#about aside h3 {
+    color: var(--green-accent);
+}
+
+#options {
+    border-radius: 1rem;
+    background-color: var(--white-light) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5rem;
+    padding: 2.5rem;
+    filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
+}
+
+#options table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#options thead {
+    background-color: var(--blue-dark);
+    color: var(--white-light);
+}
+
+#options th,
+#options td {
+    padding : 1rem;
+}
+
+#options tbody tr:nth-child(odd) {
+	background-color: var(--white-dark);
+}
+
+#options tbody tr:nth-child(even) {
+	background-color: var(--white-medium);
+}
+
+footer {
+    background-color: var(--white-light);
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1rem;
+}
