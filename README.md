@@ -1,8 +1,6 @@
-# cinf301-spr26-GLASSES
+# Glasses & Style — First Page + Shop
 
-# Run Guide
-
-This project is a simple static website. After cloning, you can run it in any of the following ways
+A two-page static site: a landing page and a Shop catalog (built div-only) sharing the same fonts, theme, and styling.
 
 ## Project Structure
 
@@ -15,63 +13,51 @@ html/
 images/
 javascript/
   script.js
+second-page/
+  css/
+    second-page.css
+  html/
+    index.html
+  images/
+  js/
+    script.js
 ```
 
-## Clone & Run
+## Pages
+- Landing: [html/index.html](html/index.html)
+  - Header with brand icons, tagline, and search form.
+  - Slideshow, info cards, and a specs table.
+- Shop (div-only): [second-page/html/index.html](second-page/html/index.html)
+  - Catalog grid of product cards (image, title, short description, price).
+  - “Add to Cart” buttons update a simple cart count.
+  - Navigation includes Home, Shop, About, Specs, Contact. About/Specs/Contact link back to the landing page sections.
 
-Anyone can clone this repo and run locally without extra setup.
+## Styling & Assets
+- Shared theme and fonts come from [css/style.css](css/style.css).
+- Shop-specific layout lives in [second-page/css/second-page.css](second-page/css/second-page.css).
+- Minimal cart JS is in [second-page/js/script.js](second-page/js/script.js).
+- Images used on Shop are in [second-page/images](second-page/images).
 
-### Windows (PowerShell)
+## Run Locally (Windows PowerShell)
+From the `firstpage` folder:
+
 ```powershell
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-py -m http.server 5500
-```
-Open: http://localhost:5500/html/index.html
-
-Notes:
-- If `py` isn’t available, try:
-```powershell
+cd "c:\Users\jilli\OneDrive\Stetson University\Spring 2026\Web Application\firstpage"
 python -m http.server 5500
 ```
-- If the command exits with an error, the port may be busy; change `5500` to another port (e.g., `8000`) and update the URL.
 
-### macOS/Linux (Terminal)
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-python3 -m http.server 5500
-```
-Open: http://localhost:5500/html/index.html
+- Landing: http://localhost:5500/html/index.html
+- Shop: http://localhost:5500/second-page/html/index.html
 
-### Node.js (Cross-platform)
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-npx http-server -c-1 -p 5500
-```
-Open: http://localhost:5500/html/index.html
+Stop the server with `Ctrl+C`.
 
-## 1) Open Directly (quickest)
-- Open the workspace in VS Code or File Explorer.
-- Open `html/index.html` in your browser.
-- Note: if any JavaScript uses `fetch()`/AJAX, browsers may block it under `file://`; use a local server below.
+## Alternative: VS Code Live Server
+- Install “Live Server” in VS Code.
+- Open [html/index.html](html/index.html) and click “Go Live”.
+- If needed, navigate to the pages directly: `/html/index.html` and `/second-page/html/index.html`.
 
-## 2) VS Code Live Server (recommended)
-- Install the “Live Server” extension in VS Code (by Ritwick Dey).
-- Open `html/index.html`, then right-click → "Open with Live Server".
-- If it opens the root, navigate to: `http://127.0.0.1:5500/html/index.html` (port may vary).
-
-## 3) Python HTTP Server
-- In PowerShell, from the project root:
-
-```powershell
-cd <path-to-your-cloned-folder>
-py -m http.server 5500
-```
-
-- Open: `http://localhost:5500/html/index.html`
-- Stop the server: press `Ctrl+C` in the terminal.
-- If `py` isn’t available, try `python -m http.server 5500`.
-- If the port is busy, use another port (e.g., `8000`) and update the URL.
-
+## Troubleshooting
+- If assets don’t load, make sure you open the page via `/html/index.html` or `/second-page/html/index.html`, not the folder root.
+- If port `5500` is busy, change it (e.g., `8000`) and update the URL.
+- Hard refresh (`Ctrl+F5`) to bypass cache.
+- Font Awesome is loaded via CDN; if an icon is missing, it may be Pro-only. Replace with a Free icon from the same library.
