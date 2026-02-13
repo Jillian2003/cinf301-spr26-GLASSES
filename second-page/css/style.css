@@ -41,12 +41,12 @@ h6 {
     text-align: center;
 }
 
-header {
+#header {
     text-align: center;
     margin-bottom: 2.5rem;
 }
 
-nav {
+#nav {
     background-color: var(--white-light);
     margin: 0 5rem;
     margin-top: 0.5rem;
@@ -54,7 +54,7 @@ nav {
     filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
 }
 
-nav ul {
+#nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,14 +64,14 @@ nav ul {
     padding: 0.5rem 1rem;
 }
 
-nav a {
+#nav a {
     text-decoration: none;
     color: var(--blue-dark);
     padding: 0.5rem 0.75rem;
     border-radius: 0.5rem;
 }
 
-nav a:hover {
+#nav a:hover {
     background-color: var(--white-dark);
     color: var(--blue-light);
 }
