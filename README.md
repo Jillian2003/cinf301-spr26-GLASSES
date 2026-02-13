@@ -30,4 +30,4 @@ second-page/
 
 ## Run Guide
 
-This project is a simple static website. After cloning, open the respective "index.html" file for "first-page" or "second-page" directories.
+This project is a simple static website. After cloning, open the respective "index.html" file for "first-page" and "second-page" directories.

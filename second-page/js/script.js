@@ -1,15 +1,37 @@
-// Minimal cart functionality for Shop page
-// Increments a cart count when Add to Cart buttons are clicked.
-
 document.addEventListener('DOMContentLoaded', () => {
-  const countEl = document.querySelector('#cart-count');
-  let count = 0;
+	const frames = Array.from(document.querySelectorAll('.frame'));
+	const prevBtn = document.querySelector('.prev');
+	const nextBtn = document.querySelector('.next');
 
-  const buttons = Array.from(document.querySelectorAll('.add-to-cart'));
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      count += 1;
-      if (countEl) countEl.textContent = String(count);
-    });
-  });
+	let idx = frames.findIndex(f => f.classList.contains('active'));
+	if (idx < 0) idx = 0;
+
+	function show(i) {
+		frames.forEach((f, n) => {
+			f.classList.remove('active');
+			if(n === i) f.classList.add('active');
+		});
+	}
+
+	function next() {
+		idx = (idx + 1) % frames.length;
+		show(idx);
+	}
+
+	function prev() {
+		idx = (idx - 1 + frames.length) % frames.length;
+		show(idx);
+	}
+
+	let timer = setInterval(next, 4000);
+
+	function resetTimer() {
+		clearInterval(timer);
+		timer = setInterval(next, 4000);
+	}
+
+	prevBtn?.addEventListener('click', () => { prev(); resetTimer(); });
+	nextBtn?.addEventListener('click', () => { next(); resetTimer(); });
+
+	show(idx);
 });
