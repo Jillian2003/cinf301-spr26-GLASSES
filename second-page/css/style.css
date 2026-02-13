@@ -25,7 +25,12 @@ body {
     overscroll-behavior: none;
 }
 
-h1, 
+h1{
+    font-family: "BBH Bogle";
+    font-size: 3rem;
+    text-align: center;
+}
+
 h2, 
 h3, 
 h4, 
@@ -38,7 +43,39 @@ h6 {
 
 header {
     text-align: center;
-    margin: 5rem;
+    margin-bottom: 3rem;
+    /*margin: 5rem;*/
+}
+
+/* navigation */
+nav {
+    background-color: var(--white-light);
+    margin: 0 5rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--blue-dark);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+nav a:hover {
+    background-color: var(--white-dark);
+    color: var(--blue-light);
 }
 
 #shop {
