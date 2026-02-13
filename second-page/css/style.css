@@ -177,27 +177,34 @@ h6 {
     filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
 }
 
-#options table {
+#options .table {
     width: 100%;
-    border-collapse: collapse;
 }
 
-#options thead {
+#options .table-head {
     background-color: var(--blue-dark);
     color: var(--white-light);
 }
 
-#options th,
-#options td {
-    padding : 1rem;
+#options .table-row {
+    display: flex;
 }
 
-#options tbody tr:nth-child(odd) {
-	background-color: var(--white-dark);
+#options .table-cell {
+    padding: 1rem;
+    flex: 1;
 }
 
-#options tbody tr:nth-child(even) {
-	background-color: var(--white-medium);
+#options .table-cell.header {
+    font-weight: 700;
+}
+
+#options .table-body .table-row:nth-child(odd) {
+    background-color: var(--white-dark);
+}
+
+#options .table-body .table-row:nth-child(even) {
+    background-color: var(--white-medium);
 }
 
 footer {
