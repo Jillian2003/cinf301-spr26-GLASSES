@@ -177,7 +177,33 @@ h6 {
     filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
 }
 
-#options .table {
+.div-table {
+  display: table;
+  width: 100%;
+}
+.div-table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+  padding: 1rem;
+}
+.div-table-row:first-child .table-cell {
+    background-color: var(--blue-dark);
+    color: var(--white-light);
+}
+.div-table-row:nth-child(2) .table-cell,
+.div-table-row:nth-child(4) .table-cell,
+.div-table-row:nth-child(6) .table-cell {
+    background-color: var(--white-dark);
+}
+.div-table-row:nth-child(3) .table-cell,
+.div-table-row:nth-child(5) .table-cell {
+    background-color: var(--white-medium);
+}
+
+
+#options table {
     width: 100%;
 }
 
@@ -205,6 +231,11 @@ h6 {
 
 #options .table-body .table-row:nth-child(even) {
     background-color: var(--white-medium);
+}
+
+#doctorOptions img {
+    width: 80px;
+    height: auto;
 }
 
 footer {
