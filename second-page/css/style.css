@@ -140,7 +140,7 @@ h6 {
     color: var(--blue-dark);
 }
 
-#about article, 
+#about .article, 
 #about aside {
     border-radius: 1rem;
     background-color: var(--white-light);
