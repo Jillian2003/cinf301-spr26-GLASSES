@@ -156,6 +156,15 @@ nav a:hover {
     color: var(--green-accent);
 }
 
+.model-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 1rem;
+    filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
+}
+
 #options {
     border-radius: 1rem;
     background-color: var(--white-light) ;
