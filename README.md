@@ -9,9 +9,13 @@ first-page/
   html/
     index.html
   images/
-    glasses-model.png
+    doctor1.jpg
+    doctor2.jpg
+    doctor3.jpg
+    doctor4.jpg
     glasses-frame-1.svg
     glasses-frame-2.svg
+    glasses-model.png
   js/
     script.js
 
@@ -21,9 +25,13 @@ second-page/
   html/
     index.html
   images/
-    glasses-model.png
+    doctor1.jpg
+    doctor2.jpg
+    doctor3.jpg
+    doctor4.jpg
     glasses-frame-1.svg
     glasses-frame-2.svg
+    glasses-model.png
   js/
     script.js
 ```
