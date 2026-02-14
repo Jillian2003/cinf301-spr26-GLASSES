@@ -8,9 +8,9 @@
 		<!-- Google Fonts: -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<!-- BBH Bogle -->
+		<!-- BBH Bogle: GOOGLEFONT1 -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BBH Bogle">
-		<!-- Bitcount Single -->
+		<!-- Bitcount Single: GOOGLEFONT2 -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitcount Single">
 
 		<!-- Font Awesome: via jsDelivr -->
@@ -20,28 +20,35 @@
 	</head>
 	<body>
 		<!-- website header -->
-		<div id ="header">
-			<h1>
-			<!-- FONTAWESOME1 -->
-			<i class="fa-solid fa-glasses"></i> Glasses & Style <i class="fa-solid fa-glasses"></i>
-			</h1>
-			<p>Find frames that fit your face and life</p>
+		<div id="header">
+			<div class="h1">
+				<!-- FONTAWESOME1 -->
+				<i class="fa-solid fa-glasses"></i> 
+				Glasses & Style 
+				<i class="fa-solid fa-glasses"></i>
+			</div>
+			<div class="p">
+				Find frames that fit your face and life
+			</div>
 		</div>
 
 		<!-- navigation bar -->
-		<div id = "nav">
+		<div id="nav">
 			<div class="nav-list">
 				<div class="nav-link"><a href="#shop">Shop</a></div>
 				<div class="nav-link"><a href="#about">About</a></div>
-				<div class="nav-link"><a href="#options">Options</a></div>
+				<div class="nav-link"><a href="#frames">Frames</a></div>
+				<div class="nav-link"><a href="#doctors">Doctors</a></div>
 				<div class="nav-link"><a href="#contact">Contact</a></div>
 			</div>
 		</div>
 
-		<div id = "main">
+		<div id="main">
 			<!-- shop -->
 			<div id="shop">
-				<h2>Featured Frames</h2>
+				<div class="h2">
+					Featured Frames
+				</div>
 				<div class="frame active">
 					<img src="../images/glasses-frame-1.svg" alt="classic round glasses"/>
 					<div class="figcaption">Classic Round In Black</div>
@@ -64,66 +71,73 @@
 
 			<!-- about -->
 			<div id="about">
-				<h2>Why Glasses & Style?</h2>
+				<div class="h2">
+					Why Glasses & Style?
+				</div>
 				<div class="article">
-					<h3>Designed for comfort</h3>
-					<p>
+					<div class="h3">Designed for comfort</div>
+					<div class="p">
 						Every pair blends lightweight materials with durable construction. Our lenses feature
 						scratch-resistant coatings and optional blue-light filtering for screen-heavy days
-					</p>
+					</div>
 				</div>
 				<div class="article">
-					<h3>Frames for every face</h3>
-					<p>
+					<div class="h3">Frames for every face</div>
+					<div class="p">
 						From round to square, minimalist to bold, explore styles curated by opticians to
 						complement different face shapes and personal aesthetics
-					</p>
+					</div>
 				</div>
 				<div class="aside">
-					<h3>
+					<div class="h3">
 						<i class="fa-solid fa-snowflake"></i>
 						Limited Winter Collection	
 						<i class="fa-solid fa-snowflake"></i>
-					</h3>
-					<p>
+					</div>
+					<div class="p">
 						Warm hues, matte finishes, and cozy vibes — available while supplies last
-					</p>
+					</div>
 				</div>
 			</div>
 
 			<img class="model-img" src="../images/glasses-model.png" alt="glasses model"/>
 
-			<!-- options -->
-			<div id="options">
-				<h2>Lens & Frame Options</h2>
-				<div id="frameOptions">
-					<div class="div-table">
-						<div class="div-table-row">
+			<!-- frames -->
+			<div id="frames">
+				<div class="h2">
+					Lens & Frame Options
+				</div>		
+				<div class="table">
+					<div class="table-head">
+						<div class="table-row">
 							<div class="table-cell">Option</div>
 							<div class="table-cell">Description</div>
 							<div class="table-cell">Price</div>
 						</div>
-						<div class="div-table-row">
+					</div>
+
+					<div class="table-body">
+						<div class="table-row">
 							<div class="table-cell">Blue Light Filter</div>
 							<div class="table-cell">Comfort during extended screen time</div>
 							<div class="table-cell">$29</div>
 						</div>
-						<div class="div-table-row">
+						<div class="table-row">
 							<div class="table-cell">Single Vision</div>
 							<div class="table-cell">Optimized for distance or reading</div>
 							<div class="table-cell">$49</div>
 						</div>
-						<div class="div-table-row">
+						<div class="table-row">
 							<div class="table-cell">Polarized</div>
 							<div class="table-cell">Reduced glare for outdoor use</div>
 							<div class="table-cell">$59</div>
 						</div>
-						<div class="div-table-row">
+						<div class="table-row">
 							<div class="table-cell">Ultra-Thin</div>
 							<div class="table-cell">Lightweight lenses for high prescriptions</div>
 							<div class="table-cell">$79</div>
 						</div>
-						<div class="div-table-row">
+						<div class="table-row">
 							<div class="table-cell">Progressive</div>
 							<div class="table-cell">Seamless near-to-far correction</div>
 							<div class="table-cell">$129</div>
@@ -134,31 +148,36 @@
 
 			<!-- doctors -->
 			<div id="doctors">
-				<h2>Optometrist Options</h2>
-				<div id = "doctorOptions">
-					<div class="div-table">
-						<div class="div-table-row">
+				<div class="h2">
+					Our Optometrists
+				</div>
+				<div class="table">
+					<div class="table-head">
+						<div class="table-row">
 							<div class="table-cell">Photo</div>
 							<div class="table-cell">Name</div>
 							<div class="table-cell">Specialty</div>
 						</div>
-						<div class="div-table-row">
+					</div>
+
+					<div class="table-body">
+						<div class="table-row">
 							<div class="table-cell"><img src="../images/doctor1.jpg" alt="Dr. Maurice Cane"></div>
 							<div class="table-cell">Dr. Maurice Cane</div>
 							<div class="table-cell">General Optometrist</div>
 						</div>
-						<div class="div-table-row">
-							<div class="table-cell"><img src="../images/doctor2..jpg" alt="Dr. Tori Ferris"></div>
+						<div class="table-row">
+							<div class="table-cell"><img src="../images/doctor2.jpg" alt="Dr. Tori Ferris"></div>
 							<div class="table-cell">Dr. Tori Ferris</div>
 							<div class="table-cell">Pediatric Optometrist</div>
 						</div>
-						<div class="div-table-row">
-							<div class="table-cell"><img src="../images/doctor3.jpeg" alt="Dr. Sam Andersen"></div>
+						<div class="table-row">
+							<div class="table-cell"><img src="../images/doctor3.jpg" alt="Dr. Sam Andersen"></div>
 							<div class="table-cell">Dr. Sam Andersen</div>
 							<div class="table-cell">Neuro-Optometrist</div>
 						</div>
-						<div class="div-table-row">
-							<div class="table-cell"><img src="../images/doctor4.webp" alt="Dr. Mary Lindon"></div>
+						<div class="table-row">
+							<div class="table-cell"><img src="../images/doctor4.jpg" alt="Dr. Mary Lindon"></div>
 							<div class="table-cell">Dr. Mary Lindon</div>
 							<div class="table-cell">Contact Lens Specialist</div>
 						</div>
@@ -172,13 +191,15 @@
 			<div class="address">
 				<small>Contact: <a href="mailto:hello@glassesandstyle.example">hello@glassesandstyle.example</a></small>
 			</div>
-			<small>&copy; 2026 Glasses & Style — All rights reserved</small>
+			<div class="small">
+				&copy; 2026 Glasses & Style — All rights reserved
+			</div>
 			<div class="aside">
-				<small>
+				<div class="small">
 					<i class="fa-solid fa-spaghetti-monster-flying"></i>
 					A dash of whimsy
 					<i class="fa-solid fa-spaghetti-monster-flying"></i>
-				</small>
+				</div>
 			</div>
 		</div>
 

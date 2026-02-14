@@ -165,7 +165,7 @@ nav a:hover {
     filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
 }
 
-#options {
+#frames {
     border-radius: 1rem;
     background-color: var(--white-light) ;
     display: flex;
@@ -177,27 +177,39 @@ nav a:hover {
     filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
 }
 
-#options table {
+#frames table {
     width: 100%;
     border-collapse: collapse;
 }
 
-#options thead {
+#frames thead {
     background-color: var(--blue-dark);
     color: var(--white-light);
 }
 
-#options th,
-#options td {
+#frames th,
+#frames td {
     padding : 1rem;
 }
 
-#options tbody tr:nth-child(odd) {
+#frames tbody tr:nth-child(odd) {
 	background-color: var(--white-dark);
 }
 
-#options tbody tr:nth-child(even) {
+#frames tbody tr:nth-child(even) {
 	background-color: var(--white-medium);
+}
+
+#doctors {
+    border-radius: 1rem;
+    background-color: var(--white-light) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5rem;
+    padding: 2.5rem;
+    filter: drop-shadow(0 0.5rem 0 var(--blue-dark));
 }
 
 #doctors table {
@@ -224,7 +236,8 @@ nav a:hover {
 }
 
 #doctors img {
-    width: 80px;
+    border-radius: 1rem;
+    width: 10rem;
     height: auto;
 }
 
